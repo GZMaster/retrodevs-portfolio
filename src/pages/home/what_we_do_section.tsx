@@ -67,7 +67,7 @@ const services: Service[] = [
 export default function WhatWeDoSection() {
   return (
     <section className='bg-white py-16 md:py-24'>
-      <div className='container mx-auto px-4 md:px-[100px]'>
+      <div className='container mx-auto px-4'>
         {/* Header */}
         <div className='text-center mb-12 md:mb-16'>
           <h2 className='text-3xl md:text-5xl font-heading font-bold text-black mb-4'>

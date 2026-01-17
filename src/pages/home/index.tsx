@@ -13,11 +13,11 @@ export default function Home() {
     <Layout>
       <HeroSection />
       <WhatWeDoSection />
+      <ProjectsShowcase />
       <BannerSection />
       <ProcessSection />
       <ExpertiseSection />
       <QuoteSection />
-      <ProjectsShowcase />
       <ReadyToWork />
     </Layout>
   )
