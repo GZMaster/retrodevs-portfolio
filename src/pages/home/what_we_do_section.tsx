@@ -3,7 +3,6 @@ interface Service {
   description: string
   icon: string
   gradient: string
-  iconColor: string
   borderColor: string
   iconBorderColor: string
 }
@@ -13,9 +12,8 @@ const services: Service[] = [
     title: 'Product Design',
     description:
       'Designing captivating digital products with user-focused interfaces that blend aesthetics with functionality.',
-    icon: '•••',
+    icon: '/assets/wwd/circles.png',
     gradient: 'linear-gradient(180deg, #FFFFFF 0%, #E8FFE5 100%)',
-    iconColor: 'text-green-600',
     borderColor: '#CBFFC6',
     iconBorderColor: '#E8FFE5',
   },
@@ -23,9 +21,8 @@ const services: Service[] = [
     title: 'Web Development',
     description:
       'Building robust, scalable websites that ensure seamless user experiences and drive conversions.',
-    icon: '</>',
+    icon: '/assets/wwd/code.png',
     gradient: 'linear-gradient(180deg, #FFFFFF 0%, #FFFAEC 100%)',
-    iconColor: 'text-orange-600',
     borderColor: '#FFF3D3',
     iconBorderColor: '#FFFAEC',
   },
@@ -33,9 +30,8 @@ const services: Service[] = [
     title: 'App Development',
     description:
       "Creating intuitive, high-performance apps that bring your vision to users' fingertips.",
-    icon: '⊞+',
+    icon: '/assets/wwd/boxes.png',
     gradient: 'linear-gradient(180deg, #FFFFFF 0%, #F1F2FC 100%)',
-    iconColor: 'text-blue-600',
     borderColor: '#E5E7FA',
     iconBorderColor: '#F1F2FC',
   },
@@ -43,9 +39,8 @@ const services: Service[] = [
     title: 'AI Development',
     description:
       'Leveraging artificial intelligence to build smart solutions that enhance user experience.',
-    icon: '{}',
+    icon: '/assets/wwd/mind.png',
     gradient: 'linear-gradient(180deg, #FFFFFF 0%, #FAF5FF 100%)',
-    iconColor: 'text-purple-600',
     borderColor: '#F3E7FF',
     iconBorderColor: '#FAF5FF',
   },
@@ -53,9 +48,8 @@ const services: Service[] = [
     title: 'Content Development',
     description:
       'Crafting compelling content that tells your story, engages your audience, and strengthens your brand identity.',
-    icon: '💬',
+    icon: '/assets/wwd/message.png',
     gradient: 'linear-gradient(180deg, #FFFFFF 0%, #F9F6ED 100%)',
-    iconColor: 'text-amber-600',
     borderColor: '#F0E8D1',
     iconBorderColor: '#F9F6ED',
   },
@@ -63,9 +57,8 @@ const services: Service[] = [
     title: 'Automation Systems',
     description:
       'High-end automation engineered to streamline workflows and drive productivity.',
-    icon: '⚙★',
+    icon: '/assets/wwd/thought.png',
     gradient: 'linear-gradient(180deg, #FFFFFF 0%, #FEF1FB 100%)',
-    iconColor: 'text-pink-600',
     borderColor: '#FEE5F8',
     iconBorderColor: '#FEF1FB',
   },
@@ -96,9 +89,11 @@ export default function WhatWeDoSection() {
               <div
                 className='w-12 h-12 rounded-full border flex items-center justify-center mb-4'
                 style={{ borderColor: service.iconBorderColor, backgroundColor: service.iconBorderColor }}>
-                <div className={`${service.iconColor} text-xl font-bold`} style={{ fontSize: '20px' }}>
-                  {service.icon}
-                </div>
+                <img
+                  src={service.icon}
+                  alt={service.title}
+                  className='w-5 h-5'
+                />
               </div>
 
               {/* Title */}
