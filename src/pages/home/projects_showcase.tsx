@@ -13,14 +13,14 @@ const projects: Project[] = [
     title: 'Formatic Trucking INC',
     description:
       'A premium shopping platform engineered for smooth browsing, flawless checkout, and exceptional user experience.',
-    image: '/assets/hero/formatic.png',
+    image: '/assets/hero/formatic-side.png',
     tags: ['Design', 'Web development'],
   },
   {
     title: 'Move Your Pet',
     description:
       'A premium shopping platform engineered for smooth browsing, flawless checkout, and exceptional user experience.',
-    image: '/assets/hero/movemypets.png',
+    image: '/assets/hero/movemypets-side.png',
     tags: ['Design', 'Web development'],
   },
 ]
