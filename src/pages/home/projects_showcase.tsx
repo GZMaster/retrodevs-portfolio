@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button'
 import { Link } from 'react-router-dom'
+import { FadeInOnScroll } from '@/components/fade-in'
 
 interface Project {
   title: string
@@ -30,7 +31,8 @@ export default function ProjectsShowcase() {
     <section className='bg-white py-12 md:py-24' id='our-work'>
       <div className='container mx-auto px-4'>
         {/* Header */}
-        <div className='flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-12 md:mb-16'>
+        <FadeInOnScroll>
+          <div className='flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-12 md:mb-16'>
           <div className='flex flex-col gap-4'>
             <h2 className='text-3xl md:text-[56px] font-heading font-bold text-black mb-4'>
               Our featured projects
@@ -49,10 +51,12 @@ export default function ProjectsShowcase() {
             </Link>
           </div>
         </div>
+        </FadeInOnScroll>
 
         {/* Projects Grid */}
         <div className='grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 relative'>
-          {projects.map((project) => (
+          {projects.map((project, index) => (
+            <FadeInOnScroll key={project.title} delay={index * 0.2}>
             <div key={project.title} className='flex flex-col'>
               {/* Project Image */}
               <div className='mb-4 w-full'>
@@ -89,6 +93,7 @@ export default function ProjectsShowcase() {
                 {project.description}
               </p>
             </div>
+            </FadeInOnScroll>
           ))}
         </div>
       </div>

@@ -7,6 +7,7 @@ import {
   InfiniteCarouselItem,
   type CarouselApi,
 } from '@/components/ui/infinite_carousel'
+import { FadeIn } from '@/components/fade-in'
 
 const images = [
   {
@@ -71,31 +72,37 @@ export default function HeroSection() {
         {/* Hero Content */}
         <div className='flex flex-col items-center text-center space-y-8 mb-16 md:mb-24'>
           {/* Main Heading */}
-          <h1 className='text-3xl md:text-5xl lg:text-[64px] font-heading font-bold text-black max-w-5xl leading-[120%] tracking-[-0.04em] text-center'>
-            Where World-Class Design Meets Elite Development
-          </h1>
+          <FadeIn delay={0.2} duration={0.8}>
+            <h1 className='text-3xl md:text-5xl lg:text-[64px] font-heading font-bold text-black max-w-5xl leading-[120%] tracking-[-0.04em] text-center'>
+              Where World-Class Design Meets Elite Development
+            </h1>
+          </FadeIn>
 
           {/* Sub-text */}
-          <p className='text-lg md:text-xl lg:text-2xl font-sans font-normal text-black max-w-3xl leading-[140%] tracking-[-0.02em] text-center'>
-            Retro Devs design, develop, and manage exceptional websites using a perfect blend of
-            timeless creativity and cutting-edge technology.
-          </p>
+          <FadeIn delay={0.4} duration={0.8}>
+            <p className='text-lg md:text-xl lg:text-2xl font-sans font-normal text-black max-w-3xl leading-[140%] tracking-[-0.02em] text-center'>
+              Retro Devs design, develop, and manage exceptional websites using a perfect blend of
+              timeless creativity and cutting-edge technology.
+            </p>
+          </FadeIn>
 
           {/* CTA Buttons */}
-          <div className='flex flex-col sm:flex-row items-center gap-4 mt-6'>
-            <Link to='/contact'>
-              <Button className='w-[155px] h-[51px] py-[14px] px-6 font-medium bg-[#493C81] text-[#F9F8FF] hover:bg-[#3A2B66] transition-colors rounded-[4px] gap-2'>
-                Start a project
-              </Button>
-            </Link>
-            <Link to='/projects'>
-              <Button
-                variant='outline'
-                className='w-[155px] h-[51px] py-[14px] px-6 font-medium border-2 border-[#493C81] text-[#493C81] bg-white hover:bg-[#F2F0FF] transition-colors rounded-[4px] gap-2'>
-                View our work
-              </Button>
-            </Link>
-          </div>
+          <FadeIn delay={0.6} duration={0.8}>
+            <div className='flex flex-col sm:flex-row items-center gap-4 mt-6'>
+              <Link to='/contact'>
+                <Button className='w-[155px] h-[51px] py-[14px] px-6 font-medium bg-[#493C81] text-[#F9F8FF] hover:bg-[#3A2B66] transition-colors rounded-[4px] gap-2'>
+                  Start a project
+                </Button>
+              </Link>
+              <Link to='/projects'>
+                <Button
+                  variant='outline'
+                  className='w-[155px] h-[51px] py-[14px] px-6 font-medium border-2 border-[#493C81] text-[#493C81] bg-white hover:bg-[#F2F0FF] transition-colors rounded-[4px] gap-2'>
+                  View our work
+                </Button>
+              </Link>
+            </div>
+          </FadeIn>
         </div>
 
         {/* Website Preview Images Carousel */}

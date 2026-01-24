@@ -64,22 +64,26 @@ const services: Service[] = [
   },
 ]
 
+import { FadeInOnScroll, FadeInStagger } from '@/components/fade-in'
+
 export default function WhatWeDoSection() {
   return (
     <section className='bg-white py-16 md:py-24'>
       <div className='container mx-auto px-4'>
         {/* Header */}
-        <div className='text-center mb-12 md:mb-16'>
-          <h2 className='text-3xl md:text-5xl font-heading font-bold text-black mb-4'>
-            What We Do Best
-          </h2>
-          <p className='text-lg md:text-xl text-gray-600 font-sans'>
-            Comprehensive digital solution tailored to our business needs.
-          </p>
-        </div>
+        <FadeInOnScroll>
+          <div className='text-center mb-12 md:mb-16'>
+            <h2 className='text-3xl md:text-5xl font-heading font-bold text-black mb-4'>
+              What We Do Best
+            </h2>
+            <p className='text-lg md:text-xl text-gray-600 font-sans'>
+              Comprehensive digital solution tailored to our business needs.
+            </p>
+          </div>
+        </FadeInOnScroll>
 
         {/* Services Grid */}
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+        <FadeInStagger staggerDelay={0.15} className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
           {services.map((service) => (
             <div
               key={service.title}
@@ -103,7 +107,7 @@ export default function WhatWeDoSection() {
               <p className='text-gray-600 text-sm leading-relaxed'>{service.description}</p>
             </div>
           ))}
-        </div>
+        </FadeInStagger>
       </div>
     </section>
   )

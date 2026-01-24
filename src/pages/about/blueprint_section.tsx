@@ -36,11 +36,14 @@ const steps: Step[] = [
   },
 ]
 
+import { FadeInOnScroll } from '@/components/fade-in'
+
 export default function BlueprintSection() {
   return (
     <section className='bg-white py-12 md:py-16 lg:py-24'>
       <div className='container mx-auto px-4 md:px-8 lg:px-[100px]'>
-        <div className='flex flex-col lg:flex-row gap-8 lg:gap-16 items-start'>
+        <FadeInOnScroll>
+          <div className='flex flex-col lg:flex-row gap-8 lg:gap-16 items-start'>
           {/* Left Column - Heading */}
           <div className='w-full lg:w-1/2'>
             <h2 className='text-4xl md:text-5xl lg:text-[56px] font-heading font-bold text-black leading-[120%] tracking-[-4%]'>
@@ -74,6 +77,7 @@ export default function BlueprintSection() {
             ))}
           </div>
         </div>
+        </FadeInOnScroll>
       </div>
     </section>
   )

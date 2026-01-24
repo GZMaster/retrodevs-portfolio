@@ -1,14 +1,18 @@
+import { FadeInOnScroll, FadeInStagger } from '@/components/fade-in'
+
 export default function ValuesSection() {
   return (
     <section className='bg-[#E7E3FF] py-12 md:py-16 lg:py-24'>
       <div className='container mx-auto px-4 md:px-8 lg:px-[100px]'>
         {/* Section Title */}
-        <h2 className='text-4xl md:text-5xl lg:text-[56px] font-heading font-bold text-black leading-[120%] tracking-[-4%] text-center mb-12 md:mb-16'>
-          Our Values
-        </h2>
+        <FadeInOnScroll>
+          <h2 className='text-4xl md:text-5xl lg:text-[56px] font-heading font-bold text-black leading-[120%] tracking-[-4%] text-center mb-12 md:mb-16'>
+            Our Values
+          </h2>
+        </FadeInOnScroll>
 
         {/* Values Grid */}
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+        <FadeInStagger staggerDelay={0.15} className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
           {values.map((value) => (
             <div
               key={value.id}
@@ -35,7 +39,7 @@ export default function ValuesSection() {
               </p>
             </div>
           ))}
-        </div>
+        </FadeInStagger>
       </div>
     </section>
   )
