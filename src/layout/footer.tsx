@@ -23,23 +23,23 @@ export default function Footer() {
 
           {/* Social Media Icons */}
           <div className='flex items-center gap-3'>
-            <a
+            {/* <a
               href='https://www.facebook.com/retrodevs'
               className='w-8 h-8 rounded-full bg-[#493C81] flex items-center justify-center text-white hover:bg-[#3A2B66] transition-colors'>
               <Facebook className='w-4 h-4' />
-            </a>
+            </a> */}
             <a
-              href='https://www.twitter.com/retrodevs'
+              href='https://x.com/RetroDevsTech'
               className='w-8 h-8 rounded-full bg-[#493C81] flex items-center justify-center text-white hover:bg-[#3A2B66] transition-colors'>
               <Twitter className='w-4 h-4' />
             </a>
-            <a
+            {/* <a
               href='https://www.instagram.com/retrodevs'
               className='w-8 h-8 rounded-full bg-[#493C81] flex items-center justify-center text-white hover:bg-[#3A2B66] transition-colors'>
               <Instagram className='w-4 h-4' />
-            </a>
+            </a> */}
             <a
-              href='https://www.linkedin.com/company/retrodevs'
+              href='https://www.linkedin.com/in/retro-devs-storage-5b28123a3/'
               className='w-8 h-8 rounded-full bg-[#493C81] flex items-center justify-center text-white hover:bg-[#3A2B66] transition-colors'>
               <Linkedin className='w-4 h-4' />
             </a>
