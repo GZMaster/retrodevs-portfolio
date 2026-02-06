@@ -55,7 +55,7 @@ export function createWebsiteSchema() {
   }
 }
 
-export function createBreadcrumbSchema(path: string, pathSegments: Array<{ name: string; url: string }>) {
+export function createBreadcrumbSchema(pathSegments: Array<{ name: string; url: string }>) {
   const items = [
     {
       "@type": "ListItem",
