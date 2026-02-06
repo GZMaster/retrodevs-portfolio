@@ -13,7 +13,7 @@ export default function Team() {
     name: "Our Team",
     url: "https://retrodevs.com/team",
   }
-  const breadcrumbSchema = createBreadcrumbSchema("/team", [
+  const breadcrumbSchema = createBreadcrumbSchema([
     { name: "Our Team", url: "https://retrodevs.com/team" },
   ])
 

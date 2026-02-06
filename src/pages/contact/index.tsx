@@ -12,7 +12,7 @@ import {
 export default function Contact() {
   const organizationSchema = createOrganizationSchema()
   const contactPageSchema = createContactPageSchema()
-  const breadcrumbSchema = createBreadcrumbSchema("/contact", [
+  const breadcrumbSchema = createBreadcrumbSchema([
     { name: "Contact Us", url: "https://retrodevs.com/contact" },
   ])
 

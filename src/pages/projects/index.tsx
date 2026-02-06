@@ -13,7 +13,7 @@ import {
 export default function Projects() {
   const organizationSchema = createOrganizationSchema()
   const collectionPageSchema = createCollectionPageSchema()
-  const breadcrumbSchema = createBreadcrumbSchema("/projects", [
+  const breadcrumbSchema = createBreadcrumbSchema([
     { name: "Projects", url: "https://retrodevs.com/projects" },
   ])
 

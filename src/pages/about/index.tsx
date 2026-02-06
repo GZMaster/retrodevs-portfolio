@@ -15,7 +15,7 @@ import {
 export default function About() {
   const organizationSchema = createOrganizationSchema()
   const aboutPageSchema = createAboutPageSchema()
-  const breadcrumbSchema = createBreadcrumbSchema("/about", [
+  const breadcrumbSchema = createBreadcrumbSchema([
     { name: "About Us", url: "https://retrodevs.com/about" },
   ])
 

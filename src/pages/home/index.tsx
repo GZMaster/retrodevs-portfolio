@@ -15,7 +15,7 @@ import {
 export default function Home() {
   const organizationSchema = createOrganizationSchema()
   const websiteSchema = createWebsiteSchema()
-  const breadcrumbSchema = createBreadcrumbSchema("/", [
+  const breadcrumbSchema = createBreadcrumbSchema([
     { name: "Home", url: "https://retrodevs.com/" },
   ])
 
