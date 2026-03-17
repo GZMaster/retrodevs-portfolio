@@ -41,9 +41,9 @@ export default function TestimonialSection() {
             {/* Name and Title */}
             <div className='text-center md:text-left'>
               <div className='font-heading font-bold text-gray-800 text-xl md:text-2xl'>
-                Adetunji Bellan
+                Isaac Agweli
               </div>
-              <div className='font-sans text-gray-600 text-sm md:text-[18px]'>Ceo, Traveller</div>
+              <div className='font-sans text-gray-600 text-sm md:text-[18px]'>Director, Formatic Trucking</div>
             </div>
           </div>
         </div>
