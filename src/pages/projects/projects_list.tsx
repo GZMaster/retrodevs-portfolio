@@ -80,7 +80,7 @@ const projects: Project[] = [
     id: 'formatic',
     title: 'Formatic Trucking INC',
     description:
-      "A sophisticated, conversion-focused e-commerce platform crafted to elevate the brand's digital presence and deliver a seamless shopping experience. This project features refined product presentation, smooth navigation, and a frictionless checkout flow designed to boost customer confidence and drive sales.",
+      'A professional freight shipping company offering Full Truckload (FTL) and Less Than Truckload (LTL) services. The site presents the brand as a reliable logistics partner with a clear focus on freight solutions and customer trust.',
     tags: ['Design', 'Web development'],
     imagePlaceholder: '/assets/projects/formatic.png',
     link: 'https://formatictrucking.com/',
@@ -89,7 +89,7 @@ const projects: Project[] = [
     id: 'moveyourpet',
     title: 'Move Your Pet',
     description:
-      "A sophisticated, conversion-focused e-commerce platform crafted to elevate the brand's digital presence and deliver a seamless shopping experience. This project features refined product presentation, smooth navigation, and a frictionless checkout flow designed to boost customer confidence and drive sales.",
+      'A pet relocation platform for Nigeria offering local and international pet travel, export and import permit assistance, veterinary health certificates, microchipping, and lab test compliance. The site emphasizes worry-free, pet-centric relocation with tailored packages and 24/7 support.',
     tags: ['Design', 'Web development'],
     imagePlaceholder: '/assets/projects/move-my-pets.png',
     link: 'https://www.movemypetng.com/',
@@ -98,7 +98,7 @@ const projects: Project[] = [
     id: 'nigeriatennis',
     title: 'Nigeria Tennis Federation',
     description:
-      "A sophisticated, conversion-focused e-commerce platform crafted to elevate the brand's digital presence and deliver a seamless shopping experience. This project features refined product presentation, smooth navigation, and a frictionless checkout flow designed to boost customer confidence and drive sales.",
+      'The official governing body for tennis in Nigeria. The platform supports development, competition, and community through membership (100k+ players), national rankings, tournament calendars, safe-play resources, and training guides for juniors, adults, and coaches.',
     tags: ['Design', 'Web development'],
     imagePlaceholder: '/assets/projects/ntf.png',
     link: 'https://nigeriatennisfederation.org/',
@@ -107,7 +107,7 @@ const projects: Project[] = [
     id: 'bralewood',
     title: 'BraleWood',
     description:
-      "A sophisticated, conversion-focused e-commerce platform crafted to elevate the brand's digital presence and deliver a seamless shopping experience. This project features refined product presentation, smooth navigation, and a frictionless checkout flow designed to boost customer confidence and drive sales.",
+      'A Nigerian financial services company specializing in foreign exchange, cross-border settlements, import payments, school fees remittance, and currency exchange. The site also highlights Bralewood Energy and positions the brand as a partner for hassle-free financial management and growth.',
     tags: ['Design', 'Web development'],
     imagePlaceholder: '/assets/projects/bralewood.png',
     link: 'https://bralewood.com/',
@@ -116,7 +116,7 @@ const projects: Project[] = [
     id: 'expresselevator',
     title: 'Express Elevator',
     description:
-      "A sophisticated, conversion-focused e-commerce platform crafted to elevate the brand's digital presence and deliver a seamless shopping experience. This project features refined product presentation, smooth navigation, and a frictionless checkout flow designed to boost customer confidence and drive sales.",
+      'An elevator and vertical transport company in Nigeria. The site showcases installation and maintenance of passenger, villa, hospital, and cargo elevators, plus escalators and automatic walkways, with rapid shaft design, 24/7 support, and a focus on safety and competitive pricing.',
     tags: ['Design', 'Web development'],
     imagePlaceholder: '/assets/projects/express-elevator.png',
     link: 'https://express-elevator.vercel.app/',
@@ -125,7 +125,7 @@ const projects: Project[] = [
     id: 'lexxyfx',
     title: 'Lexxy FX',
     description:
-      "A sophisticated, conversion-focused e-commerce platform crafted to elevate the brand's digital presence and deliver a seamless shopping experience. This project features refined product presentation, smooth navigation, and a frictionless checkout flow designed to boost customer confidence and drive sales.",
+      'A forex and financial services platform designed to support traders and clients with modern, user-focused digital experience and reliable service.',
     tags: ['Design', 'Web development'],
     imagePlaceholder: '/assets/projects/leexxy-fx.png',
     link: 'https://lexxyfx.com',
